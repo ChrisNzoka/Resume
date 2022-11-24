@@ -1,7 +1,11 @@
 :root {
-  --mainColor:var();
-  --secondaryColor:var();
-  --linkColor:var();
-  --textColor: var();
-  --bgColor:var();
+  /* color code */
+  --primaryColor: #1d3557;
+  --secondaryColor: #457b9d;
+  --linkColor: #4ca3a7;
+  --hoverLinkColor: #e63946;
+  --textColor: #1d3557;
+  --bgColor: #f1faee;
+  /* for dark mode colors, interchange --textColor value with that of --bgColor */
 }
+
