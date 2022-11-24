@@ -1,11 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+
 :root {
   /* color code */
-  --primaryColor: #1d3557;
-  --secondaryColor: #457b9d;
-  --linkColor: #4ca3a7;
+  --PriColor: #1d3557;
+  --SecColor: #e5fbfb;
+  --LinkColor: #0974b6;
   --hoverLinkColor: #e63946;
-  --textColor: #1d3557;
-  --bgColor: #f1faee;
+
   /* for dark mode colors, interchange --textColor value with that of --bgColor */
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: var(--SecColor);
+  color: var(--PriColor);
+}
+
+/* Global Rules */
+.container {
+  width: 65%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--LinkColor);
+  text-decoration: none;
+}
+
+a:hover {
+  /* color: ; */
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--hoverLinkColor);
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--SecColor);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--PriColor);
+  border-radius: 0.56em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--LinkColor);
+}
+
+/* Header */
+header {
+  background-color: var(--SecColor);
+  color: var(--PriColor);
+  border-bottom: 0.22em var(--PriColor) solid;
+  min-height: max-content;
+  max-height: 3.35em;
+  position: sticky;
+  top: 0;
+}
+
+#branding {
+  float: left;
+  margin-top: -1.27em;
+}
+
+nav {
+  float: right;
+  margin-top: 15px;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0px 20px;
+}
+
+nav li a {
+  font-size: 18px;
+  color: var(--PriColor);
+}
+
+/* bio */
+#bio-img img {
+  border-radius: 50%;
+  margin: 20px 25px 0 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  float: left;
+}
+
+#bio-details{
+  margin-top: 3em;
+}
