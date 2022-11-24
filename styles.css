@@ -91,29 +91,39 @@ header {
 
 nav {
   float: right;
-  margin-top: 15px;
+  margin-top: 0.834em;
 }
 
 nav ul li {
   display: inline;
-  padding: 0px 20px;
+  padding: 0 1.12em;
 }
 
 nav li a {
-  font-size: 18px;
+  font-size: 1.05em;
   color: var(--PriColor);
 }
 
 /* bio */
 #bio-img img {
   border-radius: 50%;
-  margin: 20px 25px 0 0;
-  width: 300px;
-  height: 300px;
+  margin: 1.12em 1.38em 0 0;
+  width: 16.68em;
+  height: 16.68em;
   object-fit: cover;
   float: left;
 }
 
-#bio-details{
+#bio-details {
   margin-top: 3em;
+}
+
+#contact p a {
+  padding: 0 3em 0 0;
+}
+
+#contact img{
+  max-width: 30px;
+  max-height: 30px;
+  padding: 0 3px;
 }
