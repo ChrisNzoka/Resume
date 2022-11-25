@@ -31,9 +31,42 @@ body {
   overflow: hidden;
 }
 
+section{
+  margin: 30px 0;
+}
+
+button {
+  height: 30px;
+  border: none;
+  border-radius: 2rem;
+  padding: 0 15px 0 15px;
+  margin-top: 20px;
+  background-color: var(--LinkColor);
+  color: var(--SecColor);
+  cursor: pointer;
+}
+
+.line-break{
+  border-top: 1px var(--PriColor) dashed;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: var(--PriColor);
+  font-weight: bold;
+}
+
+button:active {
+  background-color: var(--hoverLinkColor);
+}
+
 ul {
   margin: 0;
   padding: 0;
+}
+
+h2{
+  margin: 0;
 }
 
 a {
@@ -118,12 +151,27 @@ nav li a {
   margin-top: 3em;
 }
 
+#profile-name{
+  font-size: 1.8em;
+}
+
 #contact p a {
   padding: 0 3em 0 0;
 }
 
-#contact img{
+#contact img {
   max-width: 30px;
   max-height: 30px;
   padding: 0 3px;
 }
+
+/* Skills */
+#skills div p{
+  border: 1px var(--PriColor) solid;
+  border-radius: 6px;
+  padding: 5px 5px;
+  max-width: max-content;
+}
+
+
+
