@@ -26,7 +26,7 @@ body {
 
 /* Global Rules */
 .container {
-  width: 65%;
+  width: 70%;
   margin: auto;
   overflow: hidden;
 }
@@ -143,7 +143,7 @@ nav li a {
   color: var(--PriColor);
 }
 
-li a i:hover{
+li a i:hover {
   transform: scale(2.2);
   transition: all 0.3s ease 0s;
 }
@@ -162,18 +162,22 @@ li a i:hover{
   margin-top: 3em;
 }
 
+#bio-details p {
+  text-align: justify;
+}
+
 #profile-name {
   font-size: 1.8em;
 }
 
-#contact p a {
-  padding: 0 3em 0 0;
+#contact p a{
+  padding-right: 25px;
 }
 
-#contact img {
+#contact a img {
   max-width: 30px;
   max-height: 30px;
-  padding: 0 3px;
+  margin: 0 3px;
 }
 
 /* Skills */
@@ -204,8 +208,15 @@ li a i:hover{
   border-top: 1px var(--SecColor) dashed;
 }
 
+#project div p {
+  border: 1px var(--SecColor) dotted;
+  border-radius: 6px;
+  padding: 5px 5px;
+  /* max-width: max-content; */
+}
+
 /* Education */
-.sch-cert{
+.sch-cert {
   margin: 0;
   padding: 0;
 }
@@ -218,4 +229,93 @@ footer {
   margin-top: 10px;
   position: sticky;
   bottom: 0;
+}
+
+/* small screen laptop media querry */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* header */
+  #branding {
+    font-size: 0.8em;
+    margin-top: -1em;
+  }
+
+  nav {
+    float: right;
+    margin-top: 0.834em;
+  }
+
+  /* bio */
+  #bio-img img {
+    margin: 1.12em 1.38em 0 0;
+    width: 12.68em;
+    height: 12.68em;
+  }
+
+  #bio-details {
+    margin-top: 1em;
+  }
+
+  #profile-name {
+    font-size: 1.57em;
+  }
+
+  #bio-details a button {
+    float: right;
+    margin-top: 0;
+  }
+
+  #contact a img {
+    max-width: 30px;
+    max-height: 30px;
+    margin: 5px 3px;
+  }
+}
+
+/* tablet mdia querry */
+@media (min-width: 501px) and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  /* Header */
+  header {
+    min-height: max-content;
+    max-height: 3.35em;
+  }
+
+  #branding {
+    float: left;
+    margin-top: -1.27em;
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav ul li {
+    padding: 0 0 0 1.12em;
+  }
+
+  /* bio */
+#bio-img img {
+  margin: 0 1.38em 0 0;
+  width: 11.68em;
+  height: 11.68em;
+  object-fit: cover;
+  float: left;
+}
+
+#bio-details {
+  margin-top: -1em;
+}
+
+#profile-name {
+  font-size: 1.5em;
+}
+
+#contact a img {
+  max-width: 30px;
+  max-height: 30px;
+  margin: 0 3px;
+}
+
 }
