@@ -211,6 +211,9 @@ nav li a {
   /* max-width: max-content; */
 }
 
+.project_link {
+  color: var(--SecColor);
+}
 /* Education */
 .sch-cert {
   margin: 0;
